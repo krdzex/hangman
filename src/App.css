@@ -1,0 +1,156 @@
+#head {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: translateY(50px)translateX(-20px);
+  background-color: white;
+  visibility: hidden;
+}
+
+#body {
+  height: 100px;
+  border: 1px solid white;
+  width: 0px;
+  transform: translateY(40px)translateX(20px);
+  visibility: hidden;
+}
+
+#hand1 {
+  width: 0px;
+  height: 50px;
+  border: 1px solid white;
+  transform: rotate(25deg)translateX(11px);
+  visibility: hidden;
+}
+
+#hand2 {
+  width: 0px;
+  height: 50px;
+  border: 1px solid white;
+  transform: translateY(-48px)translateX(-12px) rotate( -25deg);
+  visibility: hidden;
+}
+
+#leg1 {
+  width: 0px;
+  height: 50px;
+  border: 1px solid white;
+  transform: translateY(-6px)translateX(-12px) rotate( 25deg);
+  visibility: hidden;
+}
+
+#leg2 {
+  width: 0px;
+  height: 50px;
+  border: 1px solid white;
+  transform: translateY(-58px)translateX(10px) rotate( -25deg);
+  visibility: hidden;
+}
+
+#rope {
+  width: 0px;
+  height: 50px;
+  border: 2px solid white;
+  transform: translatex(148px);
+}
+
+#downLine {
+  width: 200px;
+  height: 0px;
+  border: 2px solid white;
+}
+
+#rod {
+  width: 0px;
+  height: 400px;
+  border: 2px solid white;
+  transform: translateY(-402px)translateX(100px);
+}
+
+#rod2 {
+  width: 150px;
+  height: 0px;
+  border: 2px solid white;
+  transform: translateY(-2px);
+}
+
+.hangmanFigureAndPlatform {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.gameLogic {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.character {
+  margin: 0 5px;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.gameLogic {
+  outline: none;
+}
+
+.gameLogic:focus {
+  outline: none;
+}
+
+body {
+  background-color: #22344c;
+}
+
+.gameOver {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: white;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.textButtonWrapper {
+  padding: 20px 50px;
+  background-color: #1E90FF;
+  border-radius: 20px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.tries {
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 20px;
+}
